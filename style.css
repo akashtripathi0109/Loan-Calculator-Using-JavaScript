@@ -1,0 +1,119 @@
+.row{
+  display: flex;
+  margin: 50px auto;
+}
+.column{
+  flex: 5% 80% 10%;
+  padding: 5px;
+}
+.loan_cal {
+    font-family: 'Times New Roman', Times, serif;
+    width: 600px;
+    /* margin: 43px auto; */
+    background: #cccccc;
+    box-shadow: 0 12px 50px -11px rgba(198, 63, 63, 0.2);
+    border-radius: 50px;
+    color: #09142b;
+    overflow: hidden;
+  }
+  
+  .loan_cal,
+  .loan_cal * {
+    box-sizing: border-box;
+  }
+  
+  .loan_cal .head_portion {
+    background: #70851f;
+    color: rgb(34, 25, 25);
+    padding: 32px;
+  }
+  .loan_cal .head_portion img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+  .loan_cal .head_portion h2 {
+    margin-top: 0;
+    display: inline-block;
+  }
+  
+  .loan_cal form {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+  }
+  
+  .loan_cal .title {
+    margin-bottom: 16px;
+  }
+  
+  .loan_cal form input {
+    font-size: 20px;
+    padding: 8px 24px;
+    width: 100%;
+  }
+  
+  .loan_cal .result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .loan_cal .result .left {
+    width: 100%;
+    padding: 8px 32px;
+  }
+  
+  .loan_cal .left h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  
+  .loan_cal .result .value {
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(20, 33, 61, 0.2);
+  }
+  
+  .loan_cal .result .value::before {
+    content: "₹";
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 6px;
+    opacity: 0.4;
+  }
+  
+  .loan_cal .cal_btn {
+    background: #70851f;
+    color: #fff;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 24px 0;
+  }
+  
+  .loan_cal .right {
+    width: 50%;
+  }
+  
+  @media (max-width: 650px) {
+    .loan_cal {
+      width: 90%;
+      max-width: 500px;
+    }
+  
+    .loan_cal form {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .loan_cal .result {
+      flex-direction: column;
+      text-align: center;
+    }
+  }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="column">
+        <img src="/Loan Calculator 2/images/nirav_modi.jpg" alt="Snow" style="width:350px; height: 560px;">
+      </div>
+      <div class="column">
+      <div class="loan_cal">
+        <div class="head_portion">
+            <img src="/Loan Calculator 2/images/loan_calculator_logo.jpg" alt="">
+          <h2>Loan Calculator</h2>
+          <form action="#">
+            <div class="head_detail">
+              <div class="title">Amount</div>
+              <input type="text" value="20000" class="loan_amt" />
+            </div>
+  
+            <div class="head_detail">
+              <div class="title">Interest Rate</div>
+              <input type="text" value="8.5" class="interest_rate" />
+            </div>
+  
+            <div class="head_detail">
+              <div class="title">Time Period (months)</div>
+              <input type="text" value="240" class="loan_period" />
+            </div>
+          </form>
+        </div>
+  
+        <div class="result">
+          <div class="left">
+            <div class="loan_emi">
+              <h3>EMI <b>𝑖</b></h3>
+              <div class="value">123</div>
+            </div>
+  
+            <div class="total_interest">
+              <h3>Total Interest <b>𝑖</b></h3>
+              <div class="value">1234</div>
+            </div>
+  
+            <div class="total_amt">
+              <h3>Total Amount <b>𝑖</b></h3>
+              <div class="value">12345</div>
+            </div>
+  
+            <button class="cal_btn">Calculate</button>
+          </div>
+  
+          <div class="right">
+            <canvas id="myChart" width="400" height="400"></canvas>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="column">
+        <img src="/Loan Calculator 2/images/vijay_malya.jpg" alt="Snow" style="width:350px; height: 560px;">
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
