@@ -9,28 +9,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
     <div class="row">
       <div class="column">
-        <img src="/images/nirav_modi.jpg" alt="Nirav Modi" style="width:350px; height: 560px;">
+        <img src="/images/nirav_modi.jpg" alt="Nirav Modi" style="width:400px; height: 560px;margin-left: 30px;">
       </div>
       <div class="column">
       <div class="loan_cal">
         <div class="head_portion">
-            <img src="/images/loan_calculator_logo.jpg" alt="logo">
-          <h2>Loan Calculator</h2>
+          <table>
+            <tr>
+              <td><img src="/images/loan_calculator_logo.jpg" alt="logo"></td>
+              <td><h2>&nbsp;&nbsp;&nbsp;&nbsp;Loan Calculator</h2></td>
+          </tr>
+          </table>
           <form action="#">
             <div class="head_detail">
-              <div class="title">Amount</div>
+              <div class="title"><b>Amount</b></div>
               <input type="text" value="20000" class="loan_amt" />
             </div>
   
             <div class="head_detail">
-              <div class="title">Interest Rate</div>
+              <div class="title"><b>Interest Rate</b></div>
               <input type="text" value="8.5" class="interest_rate" />
             </div>
   
             <div class="head_detail">
-              <div class="title">Time Period (months)</div>
+              <div class="title"><b>Time Period (months)</b></div>
               <input type="text" value="240" class="loan_period" />
             </div>
           </form>
@@ -39,17 +47,17 @@
         <div class="result">
           <div class="left">
             <div class="loan_emi">
-              <h3>EMI <b>𝑖</b></h3>
+              <h3>EMI</h3>
               <div class="value">123</div>
             </div>
   
             <div class="total_interest">
-              <h3>Total Interest <b>𝑖</b></h3>
+              <h3>Total Interest</h3>
               <div class="value">1234</div>
             </div>
   
             <div class="total_amt">
-              <h3>Total Amount <b>𝑖</b></h3>
+              <h3>Total Amount</h3>
               <div class="value">12345</div>
             </div>
   
@@ -63,8 +71,9 @@
       </div>
       </div>
       <div class="column">
-        <img src="/images/vijay_malya.jpg" alt="Vijay Malya" style="width:350px; height: 560px;">
+        <img src="/images/vijay_malya.jpg" alt="Vijay Malya" style="width:400px; height: 560px;">
       </div>
+    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
     <script src="main.js"></script>
