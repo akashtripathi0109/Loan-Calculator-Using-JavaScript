@@ -1,6 +1,6 @@
 .row{
   display: flex;
-  margin: 93px auto;
+  margin: 85px auto;
 }
 .column{
   flex: 5% 80% 10%;
